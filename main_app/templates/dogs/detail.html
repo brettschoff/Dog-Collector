@@ -20,6 +20,8 @@
             {% endif %}
                 
         </div>
+        <a href="{% url 'dog_update' dog.id%}">Edit</a>
+        <a href="{% url 'dog_delete' dog.id%}">Delete</a>
     </div>
 {% endblock content %}
     
